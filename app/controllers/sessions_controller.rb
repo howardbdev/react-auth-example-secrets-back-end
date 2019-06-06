@@ -31,7 +31,7 @@ class SessionsController < ApplicationController
           user: user_serializer(current_user)
         }, status: :ok
     else
-      render json: {error: "No current user"} 
+      render json: {error: "No current user"}
     end
   end
 end
