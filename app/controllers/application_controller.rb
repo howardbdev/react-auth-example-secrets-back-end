@@ -11,7 +11,7 @@ class ApplicationController < ActionController::API
     begin
       @current_user ||= User.find(decode_token_and_get_user_id)
     rescue
-      return nil
+      nil
     end
   end
 
